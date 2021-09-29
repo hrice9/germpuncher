@@ -1,0 +1,9 @@
+Build movement options (2D, include jumping),
+HP,
+one attack option (throwing something?),
+background,
+art design of the human,
+throw animation.
+
+
+If possible, no corner. To make things more zoner-oriented. Like you can just keep running away forever.
