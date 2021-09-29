@@ -19,6 +19,8 @@ velocity_y = 0;
 grounded = false;
 
 facing = 1;
+dash = false;
+sprint = false;
 
 enum fighterAlarms {
 	attackAlarm,
@@ -26,5 +28,6 @@ enum fighterAlarms {
 	invincibility,
 	attackCooldown,
 	input,
-	inputTimeout
+	inputTimeout,
+	dash
 }

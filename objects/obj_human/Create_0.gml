@@ -5,7 +5,11 @@
 event_inherited();
 
 add_command_input("F F", function() {
-	x += 50 * facing;
+	//x += 50 * facing;
+	dash = true;
+	gravity_scale = 0;
+	velocity_y = 0;
+	alarm[fighterAlarms.dash] = 7;
 });
 
 // Variations on the same input command to increase consistency, the numbers just deonote which input version the player performed
