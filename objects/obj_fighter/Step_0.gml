@@ -38,15 +38,15 @@ if(place_meeting(x, y + velocity_y, obj_collider)) {
 y += velocity_y * global.time_scale;
 
 // Left and right movement
-if(grounded && !down && !dash) {
+if(grounded && !dash) {
 	if(!sprint) {
-		velocity_x = horizontal * move_speed; // TODO: Ease into motion
+		velocity_x = horizontal * move_speed * !down; // TODO: Ease into motion
 	} else {
-		velocity_x = horizontal * sprint_speed;
+		velocity_x = horizontal * sprint_speed * !down;
 	}
 }
 
-if(sprint && (sign(horizontal) != facing)) {
+if(sprint && (sign(horizontal) != facing) || down) {
 	sprint = false;
 }
 

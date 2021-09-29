@@ -9,24 +9,25 @@ add_command_input("F F", function() {
 	dash = true;
 	gravity_scale = 0;
 	velocity_y = 0;
-	alarm[fighterAlarms.dash] = 7;
+	alarm[fighterAlarms.dash] = 15;
 });
 
 // Variations on the same input command to increase consistency, the numbers just deonote which input version the player performed
 add_special_input("D DF FP", function() {
 	show_debug_message("Fire Projectile 1");
-	var obj = instance_create_layer(x + 64 * facing, y - 128, layer, obj_projectile);
+	var obj = instance_create_layer(x + 64 * facing, y - 128, layer, obj_tempProjectile);
 	obj.owner = self;
-	obj.x_speed *= facing;
-	obj.sprite_index = spr_tempHitbox;
+	obj.facing = facing;
 });
 add_special_input("D DF F FP", function() {
 	show_debug_message("Fire Projectile 2");
-	var obj = instance_create_layer(x + 64 * facing, y - 128, layer, obj_projectile);
+	var obj = instance_create_layer(x + 64 * facing, y - 128, layer, obj_tempProjectile);
 	obj.owner = self;
-	obj.x_speed *= facing;
-	obj.sprite_index = spr_tempHitbox;
+	obj.facing = facing;
 });
 add_special_input("D DF F P", function() {
 	show_debug_message("Fire Projectile 3");
+	var obj = instance_create_layer(x + 64 * facing, y - 128, layer, obj_tempProjectile);
+	obj.owner = self;
+	obj.facing = facing;
 });

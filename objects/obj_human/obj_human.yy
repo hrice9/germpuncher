@@ -29,7 +29,9 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"dash_speed","path":"objects/obj_fighter/obj_fighter.yy",},"objectId":{"name":"obj_fighter","path":"objects/obj_fighter/obj_fighter.yy",},"value":"15","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Fighters",
     "path": "folders/Objects/Fighters.yy",
