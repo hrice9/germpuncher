@@ -35,7 +35,11 @@ y += velocity_y * global.time_scale;
 
 // Left and right movement
 if(grounded && !down) {
-	velocity_x = horizontal * move_speed; // Do some sort of start up animation before moving?
+	velocity_x = horizontal * move_speed; // Ease into motion
+}
+
+if(grounded && jump) {
+	velocity_y = jump_force;
 }
 
 if(place_meeting(x + velocity_x, y, obj_collider)) {
