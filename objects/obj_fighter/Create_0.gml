@@ -16,6 +16,7 @@ prev_vertical   = 0;
 
 velocity_x = 0;
 velocity_y = 0;
+grounded = false;
 
 facing = 1;
 
