@@ -3,7 +3,6 @@
 get_command_inputs(dev_num);
 
 
-
 // Set facing - Do not change direction during a dash or during an attack animation
 if(!dash) {
 	for(var i = 0; i < instance_number(obj_fighter); i++) {
@@ -46,17 +45,25 @@ if(grounded && !dash) {
 	}
 }
 
+
+
 if(sprint && (sign(horizontal) != facing) || down) {
 	sprint = false;
 }
+
+
 
 if(dash) {
 	velocity_x = dash_speed * facing;
 }
 
+
+
 if(grounded && jump) {
 	velocity_y = jump_force;
 }
+
+
 
 if(place_meeting(x + velocity_x, y, obj_collider)) {
 	while(!place_meeting(x + sign(velocity_x), y, obj_collider)) {

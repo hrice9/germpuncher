@@ -1,2 +1,10 @@
 # germpuncher
-Fighting Game for ITCS 4230/5230 Intro to Game Design
+
+Germpuncher is a classic arcade style fighting game about social distancing
+
+## Contributers
+
+Hamilton Rice   Programmer
+Aaron Farmer    Designer
+Jeremy Pasely   Producer
+Vitta Chin      Artist

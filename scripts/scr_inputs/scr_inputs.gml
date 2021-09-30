@@ -1,5 +1,6 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+/// @function			get_inputs(num)
+/// @description		Generalized function to get player inputs
+/// @param {int} num	The device number to check for inputs. -1 for keyboard, 0-3 for xbox controllers, 4-15 for other gamepads
 function get_inputs(num){
 	// This is a really hacky solution to getting multiple input devices, but it works and I will not complain
 	left    = keyboard_check(ord("A"));
@@ -38,15 +39,10 @@ function get_inputs(num){
 	}
 }
 
-function check_vertical() {
-	return vertical > 0 ? "D" : "U";
-}
 
-function check_horizontal() {
-	// If the input direction equals facing, they are moving forward
-	return sign(horizontal) == facing ? "F" : "B";
-}
-
+/// @function			get_command_inputs(num)
+/// @description		Construct and parse the input string for the player
+/// @param {int} num	The device number to check for inputs
 function get_command_inputs(num) {
 	get_inputs(num);
 	
@@ -98,6 +94,7 @@ function get_command_inputs(num) {
 		array_push(input_chain, value);
 		
 		// Set the timeout
+		// After a set number of frames, clear the input_chain
 		alarm[fighterAlarms.inputTimeout] = 15; // Have a global input timeout
 		
 		while (true) {
@@ -127,6 +124,23 @@ function get_command_inputs(num) {
 	}
 }
 
+#region Helper functions
+
+function check_vertical() {
+	return vertical > 0 ? "D" : "U";
+}
+
+function check_horizontal() {
+	// If the input direction equals facing, they are moving forward
+	return sign(horizontal) == facing ? "F" : "B";
+}
+
+
+/// @function parse_moveset(move_list, len)
+/// @description Checks a move passed in moveset for any inputs
+/// @param {ds_map} move_list The moveset to check against
+/// @param {int} How far to check down the input chain
+
 function parse_moveset(move_list, len) {
 	var command = "";
 	for(var i = 0; i < len; i++) {
@@ -142,3 +156,5 @@ function parse_moveset(move_list, len) {
 	}
 	return false;
 }
+
+#endregion
