@@ -2,8 +2,10 @@
   "resources": [
     {"id":{"name":"scr_inputCreation","path":"scripts/scr_inputCreation/scr_inputCreation.yy",},"order":1,},
     {"id":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},"order":4,},
+    {"id":{"name":"obj_figtherDefeated","path":"objects/obj_figtherDefeated/obj_figtherDefeated.yy",},"order":1,},
     {"id":{"name":"obj_inputChains","path":"objects/obj_inputChains/obj_inputChains.yy",},"order":5,},
     {"id":{"name":"spr_tempHitbox","path":"sprites/spr_tempHitbox/spr_tempHitbox.yy",},"order":1,},
+    {"id":{"name":"spr_tempPlayerDed","path":"sprites/spr_tempPlayerDed/spr_tempPlayerDed.yy",},"order":4,},
     {"id":{"name":"scr_inputs","path":"scripts/scr_inputs/scr_inputs.yy",},"order":0,},
     {"id":{"name":"obj_tempProjectile","path":"objects/obj_tempProjectile/obj_tempProjectile.yy",},"order":7,},
     {"id":{"name":"spr_tempPlayerCrouch","path":"sprites/spr_tempPlayerCrouch/spr_tempPlayerCrouch.yy",},"order":3,},
@@ -13,6 +15,7 @@
     {"id":{"name":"obj_collider","path":"objects/obj_collider/obj_collider.yy",},"order":0,},
     {"id":{"name":"spr_collider","path":"sprites/spr_collider/spr_collider.yy",},"order":1,},
     {"id":{"name":"note_draft1","path":"notes/note_draft1/note_draft1.yy",},"order":0,},
+    {"id":{"name":"obj_humanDefeated","path":"objects/obj_humanDefeated/obj_humanDefeated.yy",},"order":2,},
     {"id":{"name":"note_inputCheatSheet","path":"notes/note_inputCheatSheet/note_inputCheatSheet.yy",},"order":1,},
     {"id":{"name":"obj_human","path":"objects/obj_human/obj_human.yy",},"order":0,},
     {"id":{"name":"obj_fighter","path":"objects/obj_fighter/obj_fighter.yy",},"order":1,},

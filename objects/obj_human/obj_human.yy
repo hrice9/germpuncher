@@ -31,6 +31,7 @@
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"dash_speed","path":"objects/obj_fighter/obj_fighter.yy",},"objectId":{"name":"obj_fighter","path":"objects/obj_fighter/obj_fighter.yy",},"value":"15","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"defeated_obj","path":"objects/obj_fighter/obj_fighter.yy",},"objectId":{"name":"obj_fighter","path":"objects/obj_fighter/obj_fighter.yy",},"value":"obj_humanDefeated","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Fighters",
