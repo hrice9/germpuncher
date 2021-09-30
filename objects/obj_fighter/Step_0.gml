@@ -3,6 +3,7 @@
 get_command_inputs(dev_num);
 
 
+
 // Set facing - Do not change direction during a dash or during an attack animation
 if(!dash) {
 	for(var i = 0; i < instance_number(obj_fighter); i++) {
@@ -46,7 +47,7 @@ if(grounded && !dash) {
 }
 
 
-
+// Stop sprinting if the player stops holding forward or they press down
 if(sprint && (sign(horizontal) != facing) || down) {
 	sprint = false;
 }

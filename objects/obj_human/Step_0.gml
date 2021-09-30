@@ -3,3 +3,10 @@
 
 // Inherit the parent event
 event_inherited();
+
+
+if(grounded && down) {
+	sprite_index = spr_tempPlayerCrouch;
+} else {
+	sprite_index = spr_tempPlayer;
+}

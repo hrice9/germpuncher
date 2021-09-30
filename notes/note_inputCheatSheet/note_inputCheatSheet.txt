@@ -1,0 +1,20 @@
+====== Input Cheat Sheet ======
+
+F = Forward
+D = Down
+B = Back
+U = Up
+P = Punch
+K = Kick
+
+Inputs in a string are separated by a space
+"D DF F" = Quarter Circle
+
+
+Special inputs are the most complex input type
+Command inputs are multi button inputs
+Neutral inputs are one button inputs
+
+Special Inputs - High Priority
+Command Inputs - Medium Priority
+Neutral Inputs - Low Priority
