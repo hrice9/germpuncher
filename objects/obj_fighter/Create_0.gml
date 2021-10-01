@@ -22,6 +22,10 @@ facing = 1;
 dash = false;
 sprint = false;
 
+blocking = false;
+crouch_block = false;
+invincible = false;
+hit_stun_count = 0;
 
 enum fighterAlarms {
 	attackAlarm,

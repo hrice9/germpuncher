@@ -1,8 +1,25 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Collision with the player
 
+// Create a custom event for the player to take damage/block
 if(other != owner) {
-	other.hitpoints -= damage;
+	if(!other.blocking) {
+		other.hitpoints -= damage;
+		other.hit_stun_count = hit_strength;
+		
+	} else {
+		if(other.crouch_block) {
+			if(hitbox_type == hitType.high) {
+				other.hitpoints -= damage;
+				other.hit_stun_count = hit_strength;
+			}
+		} else {
+			if(hitbox_type == hitType.low) {
+				other.hitpoints -= damage;
+				other.hit_stun_count = hit_strength;
+			}
+		}
+		
+	}
 	
 	with(other) {
 		if(hitpoints <= 0) {
@@ -10,5 +27,7 @@ if(other != owner) {
 		}
 	}
 	
-	instance_destroy(self);
+	if(destroy_on_collision) {
+		instance_destroy(self);
+	}
 }

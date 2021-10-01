@@ -2,8 +2,6 @@
 
 get_command_inputs(dev_num);
 
-
-
 // Set facing - Do not change direction during a dash or during an attack animation
 if(!dash) {
 	for(var i = 0; i < instance_number(obj_fighter); i++) {
@@ -52,7 +50,11 @@ if(sprint && (sign(horizontal) != facing) || down) {
 	sprint = false;
 }
 
-
+blocking = horizontal == -facing;
+if(blocking) {
+	// Determine if it is a crouch block or a mid block
+	crouch_block = down;
+}
 
 if(dash) {
 	velocity_x = dash_speed * facing;
