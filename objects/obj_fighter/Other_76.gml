@@ -3,13 +3,15 @@
 
 // TODO: Build the actually event handling structure
 	// Only handle events from self
-
+	
+event_message = event_data[? "message"];
+/*
 if(event_data[? "event_type"] == "sprite event") {
-	var instance = instance_id_get(event_data[? "element_id"]);
+	
 	// Now I can act on the instance
 	if(instance == id) {
 		show_debug_message("HI");
-		switch(event_data[? "message"]) {
+		switch(message) {
 			case "OnHitStun":
 				// Do some math magic
 				hit_stun_count --;
@@ -21,3 +23,13 @@ if(event_data[? "event_type"] == "sprite event") {
 		}
 	}
 }
+*/
+
+handle_broadcast("sprite event", function() {
+	switch(event_message) {
+		case "OnHitStun":
+			attacking = false;
+			hit_stun_count --;
+			break;
+	}
+});

@@ -1,6 +1,9 @@
 /// @description Basic Player Movements
-
-get_command_inputs(dev_num);
+if(!attacking) {
+	get_command_inputs(dev_num);
+} else {
+	horizontal = 0;
+}
 
 // Set facing - Do not change direction during a dash or during an attack animation
 if(!dash) {
