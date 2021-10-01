@@ -46,8 +46,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Fighters",
+    "path": "folders/Objects/Fighters.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_fighter",

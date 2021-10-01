@@ -5,4 +5,8 @@
 global.time_scale = 1;
 global.grav = 2;
 
-//show_debug_message(layer_get_element_layer(4));
+elems = layer_get_all_elements(layer);
+for(var i = 0; i < array_length(elems); i++) {
+	show_debug_message(elems[i]);
+	show_debug_message(instance_id_get(elems[i]));
+}

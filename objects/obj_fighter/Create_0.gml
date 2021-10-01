@@ -22,6 +22,7 @@ facing = 1;
 dash = false;
 sprint = false;
 
+
 enum fighterAlarms {
 	attackAlarm,
 	stun,
