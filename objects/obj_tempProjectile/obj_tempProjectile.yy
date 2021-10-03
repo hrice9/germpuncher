@@ -27,6 +27,7 @@
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"x_speed","path":"objects/obj_projectile/obj_projectile.yy",},"objectId":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},"value":"15","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"destory_on_animation_end","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Objects",

@@ -41,5 +41,15 @@ add_special_input("D DF F P", function() {
 	obj.owner = self;
 	obj.facing = facing;
 	*/
+	attacking = true;
 	sprite_index = spr_tempPlayerFireProj;
+});
+
+
+add_command_input("DP", function() {
+	attacking = true;
+	sprite_index = spr_tempPlayerLowKick;
+	obj = instance_create_layer(x, y, layer, obj_tempLowKickHitbox);
+	obj.owner = self;
+	obj.facing = facing;
 });
