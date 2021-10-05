@@ -5,6 +5,7 @@ if(other != owner) {
 	if(!other.blocking) {
 		other.hitpoints -= damage;
 		other.hit_stun_count = hit_strength;
+		instance_create_depth((x + other.x) / 2, y, -10, obj_hitEffect);
 		
 	} else {
 		if(other.crouch_block) {
