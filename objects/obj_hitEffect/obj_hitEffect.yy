@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_tempHitEffect3",
-    "path": "sprites/spr_tempHitEffect3/spr_tempHitEffect3.yy",
+    "name": "spr_tempHitEffect2",
+    "path": "sprites/spr_tempHitEffect2/spr_tempHitEffect2.yy",
   },
   "solid": false,
   "visible": true,

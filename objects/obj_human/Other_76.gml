@@ -15,7 +15,7 @@ handle_broadcast("sprite event", function() {
 			
 		case "OnAttackBegin":
 			// Disable player movement
-			show_debug_message("bye");
+			// show_debug_message("bye");
 			break;
 		
 		case "OnAnimationEnd":

@@ -25,6 +25,8 @@ if(other != owner) {
 			} else {
 				instance_create_depth((x + other.x) / 2, y, -10, obj_guardEffect);
 				audio_play_sound(snd_tempGuard, 10, false);
+				other.hit_stun_count = 1; // Change this to block frames
+				// set owner lag frames to some amount
 			}
 		}
 		
