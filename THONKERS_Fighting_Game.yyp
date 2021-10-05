@@ -25,6 +25,7 @@
     {"id":{"name":"obj_collider","path":"objects/obj_collider/obj_collider.yy",},"order":0,},
     {"id":{"name":"spr_collider","path":"sprites/spr_collider/spr_collider.yy",},"order":1,},
     {"id":{"name":"spr_tempPlayerLowKick","path":"sprites/spr_tempPlayerLowKick/spr_tempPlayerLowKick.yy",},"order":7,},
+    {"id":{"name":"snd_tempGuard","path":"sounds/snd_tempGuard/snd_tempGuard.yy",},"order":1,},
     {"id":{"name":"note_draft1","path":"notes/note_draft1/note_draft1.yy",},"order":0,},
     {"id":{"name":"obj_humanDefeated","path":"objects/obj_humanDefeated/obj_humanDefeated.yy",},"order":2,},
     {"id":{"name":"spr_tempPlayerHitStun","path":"sprites/spr_tempPlayerHitStun/spr_tempPlayerHitStun.yy",},"order":5,},

@@ -27,7 +27,7 @@ function get_inputs(num){
 		} else {
 			// Take no inputs because the device is not connected
 			left  = 0;
-			right = 0;
+			right = 1;
 			down  = 0;
 			kick  = 0;
 			jump  = 0;
