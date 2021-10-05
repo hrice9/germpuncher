@@ -3,6 +3,7 @@
     {"id":{"name":"scr_inputCreation","path":"scripts/scr_inputCreation/scr_inputCreation.yy",},"order":1,},
     {"id":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},"order":4,},
     {"id":{"name":"obj_figtherDefeated","path":"objects/obj_figtherDefeated/obj_figtherDefeated.yy",},"order":1,},
+    {"id":{"name":"obj_guardEffect","path":"objects/obj_guardEffect/obj_guardEffect.yy",},"order":1,},
     {"id":{"name":"spr_tempHitEffect","path":"sprites/spr_tempHitEffect/spr_tempHitEffect.yy",},"order":9,},
     {"id":{"name":"obj_inputChains","path":"objects/obj_inputChains/obj_inputChains.yy",},"order":5,},
     {"id":{"name":"spr_tempPlayerFireProj","path":"sprites/spr_tempPlayerFireProj/spr_tempPlayerFireProj.yy",},"order":6,},

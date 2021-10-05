@@ -22,6 +22,8 @@ if(other != owner) {
 				other.hit_stun_count = hit_strength;
 				instance_create_depth((x + other.x) / 2, y, -10, obj_hitEffect);
 				audio_play_sound(snd_tempPunch, 10, false);
+			} else {
+				instance_create_depth((x + other.x) / 2, y, -10, obj_guardEffect);
 			}
 		}
 		
