@@ -6,6 +6,7 @@
     {"id":{"name":"spr_tempHitEffect","path":"sprites/spr_tempHitEffect/spr_tempHitEffect.yy",},"order":9,},
     {"id":{"name":"obj_inputChains","path":"objects/obj_inputChains/obj_inputChains.yy",},"order":5,},
     {"id":{"name":"spr_tempPlayerFireProj","path":"sprites/spr_tempPlayerFireProj/spr_tempPlayerFireProj.yy",},"order":6,},
+    {"id":{"name":"snd_tempPunch","path":"sounds/snd_tempPunch/snd_tempPunch.yy",},"order":0,},
     {"id":{"name":"obj_hitEffect","path":"objects/obj_hitEffect/obj_hitEffect.yy",},"order":0,},
     {"id":{"name":"spr_tempHitEffect3","path":"sprites/spr_tempHitEffect3/spr_tempHitEffect3.yy",},"order":11,},
     {"id":{"name":"spr_tempHitbox","path":"sprites/spr_tempHitbox/spr_tempHitbox.yy",},"order":1,},

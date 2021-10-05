@@ -6,17 +6,22 @@ if(other != owner) {
 		other.hitpoints -= damage;
 		other.hit_stun_count = hit_strength;
 		instance_create_depth((x + other.x) / 2, y, -10, obj_hitEffect);
+		audio_play_sound(snd_tempPunch, 10, false);
 		
 	} else {
 		if(other.crouch_block) {
 			if(hitbox_type == hitType.high) {
 				other.hitpoints -= damage;
 				other.hit_stun_count = hit_strength;
+				instance_create_depth((x + other.x) / 2, y, -10, obj_hitEffect);
+				audio_play_sound(snd_tempPunch, 10, false);
 			}
 		} else {
 			if(hitbox_type == hitType.low) {
 				other.hitpoints -= damage;
 				other.hit_stun_count = hit_strength;
+				instance_create_depth((x + other.x) / 2, y, -10, obj_hitEffect);
+				audio_play_sound(snd_tempPunch, 10, false);
 			}
 		}
 		
