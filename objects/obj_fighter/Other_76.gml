@@ -31,5 +31,12 @@ handle_broadcast("sprite event", function() {
 			attacking = false;
 			hit_stun_count --;
 			break;
+		case "OnBlock":
+			block_frames --;
+			blocking = true;
+			if(block_frames > 0) {
+				// Set the sprite to the blocking hold sprite
+				sprite_index = block_sprite;
+			}
 	}
 });

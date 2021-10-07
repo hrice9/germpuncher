@@ -4,12 +4,19 @@
 // Inherit the parent event
 event_inherited();
 
-if(velocity_x > 0) {
-	sprite_index = spr_germaphobeWalkForward;
-} else if(velocity_x != 0) {
-	sprite_index = spr_germaphobeWalkBackward;
+if(block_frames <= 0) {
+	if(!down) {
+		if(velocity_x > 0) {
+			sprite_index = spr_germaphobeWalkForward;
+		} else if(velocity_x != 0) {
+			sprite_index = spr_germaphobeWalkBackward;
+		} else {
+			sprite_index = spr_germaphobeIdle;
+		}
+	}
 } else {
-	sprite_index = spr_germaphobeIdle;
+	sprite_index = spr_germaphobeBlockHold;
+	horizontal = 0;
 }
 
 // player is not attacking
