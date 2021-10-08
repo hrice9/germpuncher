@@ -1,5 +1,5 @@
 /// @description Basic Player Movements
-if(!attacking) {
+if(!attacking && hit_stun_count <= 0) {
 	get_command_inputs(dev_num);
 } else {
 	horizontal = 0;

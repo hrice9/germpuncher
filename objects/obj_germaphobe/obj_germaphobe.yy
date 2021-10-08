@@ -33,6 +33,7 @@
   "overriddenProperties": [
     {"propertyId":{"name":"move_speed","path":"objects/obj_fighter/obj_fighter.yy",},"objectId":{"name":"obj_fighter","path":"objects/obj_fighter/obj_fighter.yy",},"value":"5.2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"block_sprite","path":"objects/obj_fighter/obj_fighter.yy",},"objectId":{"name":"obj_fighter","path":"objects/obj_fighter/obj_fighter.yy",},"value":"spr_germaphobeBlockHold","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"jump_force","path":"objects/obj_fighter/obj_fighter.yy",},"objectId":{"name":"obj_fighter","path":"objects/obj_fighter/obj_fighter.yy",},"value":"-40","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Fighters",

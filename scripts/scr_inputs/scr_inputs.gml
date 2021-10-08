@@ -35,7 +35,6 @@ function get_inputs(num){
 			kick  = 0;
 			up    = 0;
 		}
-	
 	}
 }
 

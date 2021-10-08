@@ -6,13 +6,15 @@ event_inherited();
 
 if(block_frames <= 0) {
 	if(!down) {
-		if(velocity_x > 0) {
+		if(sign(velocity_x) == facing) {
 			sprite_index = spr_germaphobeWalkForward;
-		} else if(velocity_x != 0) {
+		} else if(sign(velocity_x) == -facing) {
 			sprite_index = spr_germaphobeWalkBackward;
 		} else {
 			sprite_index = spr_germaphobeIdle;
 		}
+	} else {
+		sprite_index = spr_germaphobeCrouch;
 	}
 } else {
 	sprite_index = spr_germaphobeBlockHold;
