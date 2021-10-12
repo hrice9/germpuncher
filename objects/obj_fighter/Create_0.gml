@@ -28,6 +28,7 @@ invincible = false;
 hit_stun_count = 0;
 attacking = false;
 
+
 enum fighterAlarms {
 	attackAlarm,
 	stun,

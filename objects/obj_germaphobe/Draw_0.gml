@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self();
+event_inherited();
 
-draw_rectangle(bbox_right, bbox_bottom, bbox_left, bbox_top, true);
+//draw_self();
+if(global.show_hitboxes) {
+	draw_rectangle(bbox_right, bbox_bottom, bbox_left, bbox_top, true);
+}
