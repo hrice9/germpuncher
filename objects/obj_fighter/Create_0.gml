@@ -30,11 +30,11 @@ attacking = false;
 
 
 enum fighterAlarms {
+	inputTimeout,
 	attackAlarm,
 	stun,
 	invincibility,
 	attackCooldown,
 	input,
-	inputTimeout,
 	dash
 }

@@ -1,2 +1,2 @@
-/// @description Attack Alarm
-canAttack = true;
+/// @description Input Timeout Alarm
+input_chain = [];

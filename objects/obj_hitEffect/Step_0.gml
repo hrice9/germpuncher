@@ -1,1 +1,1 @@
-image_speed = global.time_scale;
+//image_speed = global.time_scale;
