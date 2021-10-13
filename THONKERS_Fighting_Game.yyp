@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"scr_time","path":"scripts/scr_time/scr_time.yy",},"order":4,},
     {"id":{"name":"obj_germaphobe","path":"objects/obj_germaphobe/obj_germaphobe.yy",},"order":4,},
     {"id":{"name":"scr_inputCreation","path":"scripts/scr_inputCreation/scr_inputCreation.yy",},"order":1,},
     {"id":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},"order":4,},

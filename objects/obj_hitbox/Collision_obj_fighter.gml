@@ -7,6 +7,7 @@ if(other != owner) {
 		other.hit_stun_count = hit_strength;
 		instance_create_depth((x + other.x) / 2, y, -10, obj_hitEffect);
 		audio_play_sound(snd_tempPunch, 10, false);
+		set_time_scale(0, 5);
 		
 	} else {
 		if(other.crouch_block) {
@@ -15,6 +16,7 @@ if(other != owner) {
 				other.hit_stun_count = hit_strength;
 				instance_create_depth((x + other.x) / 2, y, -10, obj_hitEffect);
 				audio_play_sound(snd_tempPunch, 10, false);
+				set_time_scale(0, 5);
 			}
 		} else {
 			if(hitbox_type == hitType.low) {
@@ -22,6 +24,7 @@ if(other != owner) {
 				other.hit_stun_count = hit_strength;
 				instance_create_depth((x + other.x) / 2, y, -10, obj_hitEffect);
 				audio_play_sound(snd_tempPunch, 10, false);
+				set_time_scale(0, 5);
 			} else {
 				instance_create_depth((x + other.x) / 2, y, -10, obj_guardEffect);
 				audio_play_sound(snd_tempGuard, 10, false);

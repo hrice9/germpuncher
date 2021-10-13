@@ -12,8 +12,10 @@ while(!position_meeting(half_room_width, global.ground_height, obj_collider)) {
 	show_debug_message(global.ground_height);
 }
 
+/*
 elems = layer_get_all_elements(layer);
 for(var i = 0; i < array_length(elems); i++) {
 	show_debug_message(elems[i]);
 	show_debug_message(instance_id_get(elems[i]));
 }
+*/

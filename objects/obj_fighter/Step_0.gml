@@ -19,7 +19,7 @@ if(!dash) {
 }
 
 image_xscale = facing;
-
+image_speed = global.time_scale;
 
 if(!dash) {
 	gravity_scale = velocity_y > 0 ? 1.2 : 1;
