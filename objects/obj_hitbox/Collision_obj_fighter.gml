@@ -8,6 +8,7 @@ if(other != owner) {
 		instance_create_depth((x + other.x) / 2, y, -10, obj_hitEffect);
 		audio_play_sound(snd_tempPunch, 10, false);
 		set_time_scale(0, 5);
+		set_camera_shake(2, 12);
 		
 	} else {
 		if(other.crouch_block) {
@@ -17,6 +18,7 @@ if(other != owner) {
 				instance_create_depth((x + other.x) / 2, y, -10, obj_hitEffect);
 				audio_play_sound(snd_tempPunch, 10, false);
 				set_time_scale(0, 5);
+				set_camera_shake(2, 12);
 			}
 		} else {
 			if(hitbox_type == hitType.low) {
@@ -25,6 +27,7 @@ if(other != owner) {
 				instance_create_depth((x + other.x) / 2, y, -10, obj_hitEffect);
 				audio_play_sound(snd_tempPunch, 10, false);
 				set_time_scale(0, 5);
+				set_camera_shake(2, 12);
 			} else {
 				instance_create_depth((x + other.x) / 2, y, -10, obj_guardEffect);
 				audio_play_sound(snd_tempGuard, 10, false);

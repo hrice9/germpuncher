@@ -22,6 +22,7 @@
     {"id":{"name":"spr_germaphobeWalkForward","path":"sprites/spr_germaphobeWalkForward/spr_germaphobeWalkForward.yy",},"order":2,},
     {"id":{"name":"spr_tempPlayerDed","path":"sprites/spr_tempPlayerDed/spr_tempPlayerDed.yy",},"order":4,},
     {"id":{"name":"spr_groceryStoreBackground","path":"sprites/spr_groceryStoreBackground/spr_groceryStoreBackground.yy",},"order":0,},
+    {"id":{"name":"scr_cameraShake","path":"scripts/scr_cameraShake/scr_cameraShake.yy",},"order":5,},
     {"id":{"name":"scr_inputs","path":"scripts/scr_inputs/scr_inputs.yy",},"order":0,},
     {"id":{"name":"obj_tempProjectile","path":"objects/obj_tempProjectile/obj_tempProjectile.yy",},"order":7,},
     {"id":{"name":"spr_tempPlayerCrouch","path":"sprites/spr_tempPlayerCrouch/spr_tempPlayerCrouch.yy",},"order":3,},
