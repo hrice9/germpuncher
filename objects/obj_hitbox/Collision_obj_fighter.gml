@@ -40,7 +40,9 @@ if(other != owner) {
 	
 	with(other) {
 		if(hitpoints <= 0) {
-			instance_change(defeated_obj, true);
+			//instance_change(defeated_obj, true);
+			instance_destroy(self);
+			set_time_scale(.1, 60);
 		}
 	}
 	

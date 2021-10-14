@@ -3,13 +3,25 @@
 /// @param {int} num	The device number to check for inputs. -1 for keyboard, 0-3 for xbox controllers, 4-15 for other gamepads
 function get_inputs(num){
 	// This is a really hacky solution to getting multiple input devices, but it works and I will not complain
-	left    = keyboard_check(ord("A"));
-	right   = keyboard_check(ord("D"));
-	down    = keyboard_check(ord("S"));
-	up      = keyboard_check(ord("W"));
-	punch   = keyboard_check_pressed(ord("J"));
-	kick    = keyboard_check_pressed(ord("K"));
-	jump    = keyboard_check_pressed(ord("W"));
+	
+	left  = 0;
+	right = 0;
+	down  = 0;
+	kick  = 0;
+	jump  = 0;
+	punch = 0;
+	kick  = 0;
+	up    = 0;
+	
+	if(num == -1) {
+		left    = keyboard_check(ord("A"));
+		right   = keyboard_check(ord("D"));
+		down    = keyboard_check(ord("S"));
+		up      = keyboard_check(ord("W"));
+		punch   = keyboard_check_pressed(ord("J"));
+		kick    = keyboard_check_pressed(ord("K"));
+		jump    = keyboard_check_pressed(ord("W"));
+	}
 
 	
 	if(num >= 0) {
