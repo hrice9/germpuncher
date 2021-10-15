@@ -5,7 +5,7 @@ spawn_y = other.y;
 if(hitType.high) spawn_y = other.y - random_range(-10, 10) - other.sprite_height;
 if(hitType.mid) spawn_y = other.y - random_range(-10, 10) - other.sprite_height/2;
 
-show_debug_message(spawn_y);
+//show_debug_message(spawn_y);
 // Create a custom event for the player to take damage/block
 if(other != owner) {
 	if(!other.blocking) {
