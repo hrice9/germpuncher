@@ -78,6 +78,15 @@ if(place_meeting(x + velocity_x, y, obj_collider)) {
 	velocity_x = 0;
 }
 
+if(grounded) {
+	if(place_meeting(x + velocity_x, y, obj_fighter)) {
+		while(!place_meeting(x + sign(velocity_x), y, obj_fighter)) {
+			x += sign(velocity_x);
+		}
+		velocity_x = 0;
+	}
+}
+
 x += velocity_x * global.time_scale;
 
 

@@ -3,7 +3,7 @@
     "name": "spr_collider",
     "path": "sprites/spr_collider/spr_collider.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": false,
   "spriteMaskId": null,
   "persistent": false,
