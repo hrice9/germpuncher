@@ -20,3 +20,5 @@ count_time = false;
 match_time = 90 * 60;
 time_remaining = match_time;
 alarm[0] = 3 * 60;
+
+timeout = false;

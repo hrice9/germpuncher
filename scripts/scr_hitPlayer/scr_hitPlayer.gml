@@ -3,7 +3,8 @@
 function hit(){
 	other.hitpoints -= damage;
 	other.hit_stun_count = hit_strength;
-	instance_create_depth((x + other.x) / 2, spawn_y, -10, obj_hitEffect);
+	var hit_eff = instance_create_depth((x + other.x) / 2, spawn_y, -10, obj_hitEffect);
+	hit_eff.image_xscale = facing;
 	audio_play_sound(snd_tempPunch, 10, false);
 	set_time_scale(0, pause_frames);
 	set_camera_shake(screen_shake_intensity, screen_shake_duration);
