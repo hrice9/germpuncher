@@ -1,33 +1,24 @@
 /// @description Collision with the player
 
+spawn_y = other.y;
+
+if(hitType.high) spawn_y = other.y - random_range(-10, 10) - other.sprite_height;
+if(hitType.mid) spawn_y = other.y - random_range(-10, 10) - other.sprite_height/2;
+
+show_debug_message(spawn_y);
 // Create a custom event for the player to take damage/block
 if(other != owner) {
 	if(!other.blocking) {
-		other.hitpoints -= damage;
-		other.hit_stun_count = hit_strength;
-		instance_create_depth((x + other.x) / 2, y, -10, obj_hitEffect);
-		audio_play_sound(snd_tempPunch, 10, false);
-		set_time_scale(0, 5);
-		set_camera_shake(2, 12);
+		hit();
 		
 	} else {
 		if(other.crouch_block) {
 			if(hitbox_type == hitType.high) {
-				other.hitpoints -= damage;
-				other.hit_stun_count = hit_strength;
-				instance_create_depth((x + other.x) / 2, y, -10, obj_hitEffect);
-				audio_play_sound(snd_tempPunch, 10, false);
-				set_time_scale(0, 5);
-				set_camera_shake(2, 12);
+				hit();
 			}
 		} else {
 			if(hitbox_type == hitType.low) {
-				other.hitpoints -= damage;
-				other.hit_stun_count = hit_strength;
-				instance_create_depth((x + other.x) / 2, y, -10, obj_hitEffect);
-				audio_play_sound(snd_tempPunch, 10, false);
-				set_time_scale(0, 5);
-				set_camera_shake(2, 12);
+				hit();
 			} else {
 				instance_create_depth((x + other.x) / 2, y, -10, obj_guardEffect);
 				audio_play_sound(snd_tempGuard, 10, false);

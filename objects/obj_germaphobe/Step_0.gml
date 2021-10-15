@@ -43,3 +43,15 @@ if(!attacking && block_frames <= 0 && hit_stun_count <= 0) {
 // player is on the ground
 // player is not hit stun
 // player is not blocking
+
+
+if(spray) {
+	spray_timer -= global.time_scale;
+	if(spray_timer <= 0) {
+		var obj = instance_create_layer(x, y - 300, layer, obj_tempProjectile);
+		obj.owner = self;
+		obj.facing = facing;
+		spray = false;
+		attacking = false;
+	}
+}

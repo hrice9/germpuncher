@@ -24,7 +24,7 @@ if(event_data[? "event_type"] == "sprite event") {
 	}
 }
 */
-
+/*
 handle_broadcast("sprite event", function() {
 	switch(event_message) {
 		case "OnHitStun":
@@ -40,6 +40,7 @@ handle_broadcast("sprite event", function() {
 			}
 	}
 });
+*/
 
 //show_debug_message(instance_id_get(event_data[? "element_id"]));
 //show_debug_message(event_data[? "element_id"]);

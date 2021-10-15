@@ -79,3 +79,11 @@ if(place_meeting(x + velocity_x, y, obj_collider)) {
 }
 
 x += velocity_x * global.time_scale;
+
+
+block_frames -= global.time_scale;
+hit_stun_count -= global.time_scale;
+
+if(hit_stun_count > 0 || block_frames > 0) {
+	attacking = false;
+}

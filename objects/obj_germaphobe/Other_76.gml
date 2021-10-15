@@ -1,7 +1,7 @@
 
 // Inherit the parent event
 event_inherited();
-
+/*
 handle_broadcast("sprite event", function() {
 	switch(event_message) {
 		case "OnFireProjectile":
@@ -32,3 +32,4 @@ handle_broadcast("sprite event", function() {
 //show_debug_message(event_data[? "element_id"]);
 
 //show_debug_message(id);
+*/
