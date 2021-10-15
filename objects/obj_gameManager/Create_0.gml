@@ -22,8 +22,8 @@ shake_intensity = 0;
 
 player1 = obj_germaphobe;
 player2 = obj_germaphobe;
-player1_device = -1;
-player2_device = 0;
+player1_device = 0;
+player2_device = -1;
 
 player1_match_score = 0;
 player2_match_score = 0;

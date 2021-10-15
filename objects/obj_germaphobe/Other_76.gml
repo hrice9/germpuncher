@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 
 // Inherit the parent event
 event_inherited();
@@ -16,12 +14,21 @@ handle_broadcast("sprite event", function() {
 		case "OnAttackBegin":
 			// Disable player movement
 			// show_debug_message("bye");
+			show_debug_message("Salutations my dear frieds");
 			break;
 		
 		case "OnAnimationEnd":
 			// Release the player movement
 			attacking = false;
+			if(grounded) {
+				sprite_index = spr_germaphobeBlock;
+			}
 			show_debug_message("hello");
 			break;
+			
 	}
 });
+
+//show_debug_message(event_data[? "element_id"]);
+
+//show_debug_message(id);

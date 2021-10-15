@@ -30,8 +30,8 @@
     {"propertyId":{"name":"destory_on_animation_end","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "germaphobe",
+    "path": "folders/Objects/Hitboxes/germaphobe.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_tempProjectile",

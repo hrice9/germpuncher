@@ -7,8 +7,8 @@ if(global.ground_height == 0) {
 		show_debug_message(global.ground_height);
 	}
 }
-p1 = instance_create_layer(250, global.ground_height - 1, layer, obj_gameManager.player1);
-p2 = instance_create_layer(room_width - 250, global.ground_height - 1, layer, obj_gameManager.player2);
+p1 = instance_create_layer(250, global.ground_height - 1, "Fighters", obj_gameManager.player1);
+p2 = instance_create_layer(room_width - 250, global.ground_height - 1, "Fighters", obj_gameManager.player2);
 
 p1.dev_num = -2;
 p2.dev_num = -2;

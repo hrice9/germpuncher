@@ -40,3 +40,6 @@ handle_broadcast("sprite event", function() {
 			}
 	}
 });
+
+//show_debug_message(instance_id_get(event_data[? "element_id"]));
+//show_debug_message(event_data[? "element_id"]);

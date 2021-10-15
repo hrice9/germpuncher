@@ -9,3 +9,11 @@ add_neutral_input("BP", function() {
 	obj.owner = self;
 	obj.facing = facing;
 });
+
+add_neutral_input("P", function() {
+	attacking = true;
+	sprite_index = spr_germaphobePunch;
+	var obj = instance_create_layer(x, y, layer, obj_germaphobePunchHitbox);
+	obj.owner = self;
+	obj.facing = facing;
+});
