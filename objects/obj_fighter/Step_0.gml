@@ -1,5 +1,5 @@
 /// @description Basic Player Movements
-if(!attacking && hit_stun_count <= 0) {
+if(!attacking && hit_stun_count <= 0 && lag_frames <= 0) {
 	get_command_inputs(dev_num);
 } else {
 	horizontal = 0;
@@ -92,6 +92,8 @@ x += velocity_x * global.time_scale;
 
 block_frames -= global.time_scale;
 hit_stun_count -= global.time_scale;
+lag_frames -= global.time_scale;
+
 
 if(hit_stun_count > 0 || block_frames > 0) {
 	attacking = false;

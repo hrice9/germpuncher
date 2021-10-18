@@ -30,6 +30,7 @@ add_command_input("D DB BP", function() {
 	spray = true;
 	attacking = true;
 	sprite_index = spr_germaphobeSpray;
+	image_index = 0;
 });
 
 add_command_input("D DB B BP", function() {
@@ -37,4 +38,5 @@ add_command_input("D DB B BP", function() {
 	spray = true;
 	attacking = true;
 	sprite_index = spr_germaphobeSpray;
+	image_index = 0;
 });
