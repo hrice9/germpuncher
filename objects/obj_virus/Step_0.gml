@@ -32,7 +32,7 @@ if(!attacking && block_frames <= 0 && hit_stun_count <= 0) {
 if(spray) {
 	spray_timer -= global.time_scale;
 	if(spray_timer <= 0) {
-		var obj = instance_create_layer(x + 128 * facing, y - 256, layer, obj_tempProjectile);
+		var obj = instance_create_layer(x, y - 300, layer, obj_tempProjectile);
 		obj.owner = self;
 		obj.facing = facing;
 		spray = false;
