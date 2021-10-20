@@ -1,7 +1,9 @@
 
 // draw the time remaining
 draw_set_halign(fa_center);
+draw_set_font(fnt_fightingGameTimer);
 draw_text(room_width/2, 50, ceil(time_remaining / 60));
+draw_set_font(fnt_menuItem);
 
 // draw healthbars
 var bar_length = room_width/2 - 105;

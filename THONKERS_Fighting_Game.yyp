@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"snd_groceryStoreBackground1","path":"sounds/snd_groceryStoreBackground1/snd_groceryStoreBackground1.yy",},"order":2,},
     {"id":{"name":"scr_time","path":"scripts/scr_time/scr_time.yy",},"order":4,},
     {"id":{"name":"obj_germaphobe","path":"objects/obj_germaphobe/obj_germaphobe.yy",},"order":4,},
     {"id":{"name":"scr_inputCreation","path":"scripts/scr_inputCreation/scr_inputCreation.yy",},"order":1,},
@@ -8,6 +9,7 @@
     {"id":{"name":"obj_guardEffect","path":"objects/obj_guardEffect/obj_guardEffect.yy",},"order":1,},
     {"id":{"name":"spr_germaphobeCrouch","path":"sprites/spr_germaphobeCrouch/spr_germaphobeCrouch.yy",},"order":7,},
     {"id":{"name":"spr_germaphobePunchHitbox","path":"sprites/spr_germaphobePunchHitbox/spr_germaphobePunchHitbox.yy",},"order":0,},
+    {"id":{"name":"rm_controllerSelect","path":"rooms/rm_controllerSelect/rm_controllerSelect.yy",},"order":3,},
     {"id":{"name":"spr_tempHitEffect","path":"sprites/spr_tempHitEffect/spr_tempHitEffect.yy",},"order":9,},
     {"id":{"name":"obj_inputChains","path":"objects/obj_inputChains/obj_inputChains.yy",},"order":5,},
     {"id":{"name":"spr_tempPlayerFireProj","path":"sprites/spr_tempPlayerFireProj/spr_tempPlayerFireProj.yy",},"order":6,},
@@ -32,7 +34,10 @@
     {"id":{"name":"spr_tempPlayer","path":"sprites/spr_tempPlayer/spr_tempPlayer.yy",},"order":0,},
     {"id":{"name":"obj_gameManager","path":"objects/obj_gameManager/obj_gameManager.yy",},"order":6,},
     {"id":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"order":1,},
+    {"id":{"name":"obj_controllerSelectManager","path":"objects/obj_controllerSelectManager/obj_controllerSelectManager.yy",},"order":14,},
     {"id":{"name":"spr_tempPlayerLowKickHitBox","path":"sprites/spr_tempPlayerLowKickHitBox/spr_tempPlayerLowKickHitBox.yy",},"order":8,},
+    {"id":{"name":"spr_tempPlayerToken","path":"sprites/spr_tempPlayerToken/spr_tempPlayerToken.yy",},"order":12,},
+    {"id":{"name":"fnt_menuItem","path":"fonts/fnt_menuItem/fnt_menuItem.yy",},"order":1,},
     {"id":{"name":"obj_arenaManager","path":"objects/obj_arenaManager/obj_arenaManager.yy",},"order":11,},
     {"id":{"name":"obj_mainMenuManager","path":"objects/obj_mainMenuManager/obj_mainMenuManager.yy",},"order":10,},
     {"id":{"name":"rm_mainMenu","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},"order":1,},
@@ -47,11 +52,15 @@
     {"id":{"name":"rm_victoryScreen","path":"rooms/rm_victoryScreen/rm_victoryScreen.yy",},"order":2,},
     {"id":{"name":"spr_tempPlayerLowKick","path":"sprites/spr_tempPlayerLowKick/spr_tempPlayerLowKick.yy",},"order":7,},
     {"id":{"name":"snd_tempGuard","path":"sounds/snd_tempGuard/snd_tempGuard.yy",},"order":1,},
+    {"id":{"name":"fnt_fightingGameTimer","path":"fonts/fnt_fightingGameTimer/fnt_fightingGameTimer.yy",},"order":0,},
     {"id":{"name":"note_draft1","path":"notes/note_draft1/note_draft1.yy",},"order":0,},
     {"id":{"name":"obj_humanDefeated","path":"objects/obj_humanDefeated/obj_humanDefeated.yy",},"order":2,},
+    {"id":{"name":"obj_playerToken","path":"objects/obj_playerToken/obj_playerToken.yy",},"order":15,},
     {"id":{"name":"scr_endMatch","path":"scripts/scr_endMatch/scr_endMatch.yy",},"order":6,},
     {"id":{"name":"spr_tempPlayerHitStun","path":"sprites/spr_tempPlayerHitStun/spr_tempPlayerHitStun.yy",},"order":5,},
     {"id":{"name":"spr_germaphobeBlock","path":"sprites/spr_germaphobeBlock/spr_germaphobeBlock.yy",},"order":1,},
+    {"id":{"name":"note_externalCredit","path":"notes/note_externalCredit/note_externalCredit.yy",},"order":2,},
+    {"id":{"name":"scr_math","path":"scripts/scr_math/scr_math.yy",},"order":8,},
     {"id":{"name":"note_inputCheatSheet","path":"notes/note_inputCheatSheet/note_inputCheatSheet.yy",},"order":1,},
     {"id":{"name":"obj_human","path":"objects/obj_human/obj_human.yy",},"order":0,},
     {"id":{"name":"obj_fighter","path":"objects/obj_fighter/obj_fighter.yy",},"order":3,},
@@ -75,6 +84,7 @@
     {"roomId":{"name":"rm_mainMenu","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},},
     {"roomId":{"name":"rm_arena","path":"rooms/rm_arena/rm_arena.yy",},},
     {"roomId":{"name":"rm_victoryScreen","path":"rooms/rm_victoryScreen/rm_victoryScreen.yy",},},
+    {"roomId":{"name":"rm_controllerSelect","path":"rooms/rm_controllerSelect/rm_controllerSelect.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -106,7 +116,9 @@
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"Act_Of_Rejection.ttf","resourceType":"GMIncludedFile",},
+  ],
   "MetaData": {
     "IDEVersion": "2.3.3.574",
   },

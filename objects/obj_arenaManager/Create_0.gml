@@ -22,3 +22,6 @@ time_remaining = match_time;
 alarm[0] = 3 * 60;
 
 timeout = false;
+
+
+audio_play_sound(snd_groceryStoreBackground1, 0, true);
