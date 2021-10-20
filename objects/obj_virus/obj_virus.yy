@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_germaphobeIdle",
-    "path": "sprites/spr_germaphobeIdle/spr_germaphobeIdle.yy",
+    "name": "spr_virusIdle",
+    "path": "sprites/spr_virusIdle/spr_virusIdle.yy",
   },
   "solid": false,
   "visible": true,
