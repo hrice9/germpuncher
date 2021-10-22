@@ -12,6 +12,7 @@
     {"id":{"name":"obj_guardEffect","path":"objects/obj_guardEffect/obj_guardEffect.yy",},"order":1,},
     {"id":{"name":"spr_germaphobeCrouch","path":"sprites/spr_germaphobeCrouch/spr_germaphobeCrouch.yy",},"order":7,},
     {"id":{"name":"spr_germaphobePunchHitbox","path":"sprites/spr_germaphobePunchHitbox/spr_germaphobePunchHitbox.yy",},"order":0,},
+    {"id":{"name":"spr_germaphobeJump","path":"sprites/spr_germaphobeJump/spr_germaphobeJump.yy",},"order":15,},
     {"id":{"name":"rm_controllerSelect","path":"rooms/rm_controllerSelect/rm_controllerSelect.yy",},"order":3,},
     {"id":{"name":"spr_tempHitEffect","path":"sprites/spr_tempHitEffect/spr_tempHitEffect.yy",},"order":9,},
     {"id":{"name":"rm_characterSelect","path":"rooms/rm_characterSelect/rm_characterSelect.yy",},"order":4,},
