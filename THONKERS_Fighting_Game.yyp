@@ -73,6 +73,7 @@
     {"id":{"name":"scr_endMatch","path":"scripts/scr_endMatch/scr_endMatch.yy",},"order":6,},
     {"id":{"name":"spr_blastSprite","path":"sprites/spr_blastSprite/spr_blastSprite.yy",},"order":14,},
     {"id":{"name":"spr_tempPlayerHitStun","path":"sprites/spr_tempPlayerHitStun/spr_tempPlayerHitStun.yy",},"order":5,},
+    {"id":{"name":"spr_virusJump","path":"sprites/spr_virusJump/spr_virusJump.yy",},"order":11,},
     {"id":{"name":"obj_characterSelectManager","path":"objects/obj_characterSelectManager/obj_characterSelectManager.yy",},"order":17,},
     {"id":{"name":"spr_uiSelectTokenP2","path":"sprites/spr_uiSelectTokenP2/spr_uiSelectTokenP2.yy",},"order":2,},
     {"id":{"name":"spr_germaphobeBlock","path":"sprites/spr_germaphobeBlock/spr_germaphobeBlock.yy",},"order":1,},

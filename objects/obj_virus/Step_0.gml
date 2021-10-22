@@ -6,18 +6,22 @@ event_inherited();
 // player is not attacking
 if(!attacking && block_frames <= 0 && hit_stun_count <= 0) {
 	// update animations based on movement
-	if(!down) {
-		if(sign(velocity_x) == facing) {
-			sprite_index = spr_virusWalkForward;
-		} else if(sign(velocity_x) == -facing) {
-			sprite_index = spr_virusWalkBackward;
+	if(grounded) {
+		if(!down) {
+			if(sign(velocity_x) == facing) {
+				sprite_index = spr_virusWalkForward;
+			} else if(sign(velocity_x) == -facing) {
+				sprite_index = spr_virusWalkBackward;
+			} else {
+				sprite_index = spr_virusIdle;
+			}
 		} else {
-			sprite_index = spr_virusIdle;
+			if(sprite_index != spr_virusCrouchHold) {
+				sprite_index = spr_virusCrouch;
+			}
 		}
 	} else {
-		if(sprite_index != spr_virusCrouchHold) {
-			sprite_index = spr_virusCrouch;
-		}
+		sprite_index = spr_virusJump;
 	}
 } else if(block_frames > 0) {
 	sprite_index = spr_virusBlock;
