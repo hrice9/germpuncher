@@ -135,6 +135,37 @@ function get_command_inputs(num) {
 	}
 }
 
+
+function get_ui_inputs(num) {
+	left   = 0;
+	right  = 0;
+	up     = 0;
+	down   = 0;
+	select = 0;
+	back   = 0;
+	
+	if(num == -1) {
+		// keyboard
+		left   = keyboard_check_pressed(ord("A"));
+		right  = keyboard_check_pressed(ord("D"));
+		up     = keyboard_check_pressed(ord("W"));
+		down   = keyboard_check_pressed(ord("S"));
+		select = keyboard_check_pressed(ord("J"));
+		back   = keyboard_check_pressed(ord("K"));
+	}
+	
+	else {
+		if(gamepad_is_connected(num)) {
+			left   = gamepad_button_check_pressed(num, gp_padl);
+			right  = gamepad_button_check_pressed(num, gp_padr);
+			up     = gamepad_button_check_pressed(num, gp_padu);
+			down   = gamepad_button_check_pressed(num, gp_padd);
+			select = gamepad_button_check_pressed(num, gp_face1);
+			back   = gamepad_button_check_pressed(num, gp_face2);
+		}
+	}
+}
+
 #region Helper functions
 
 function check_vertical() {

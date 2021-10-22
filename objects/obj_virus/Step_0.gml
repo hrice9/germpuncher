@@ -12,17 +12,17 @@ if(!attacking && block_frames <= 0 && hit_stun_count <= 0) {
 		} else if(sign(velocity_x) == -facing) {
 			sprite_index = spr_germaphobeWalkBackward;
 		} else {
-			sprite_index = spr_germaphobeIdle;
+			sprite_index = spr_virusIdle;
 		}
 	} else {
-		if(sprite_index != spr_germaphobeCrouch) {
-			sprite_index = spr_germaphobeCrouchAnimation;
+		if(sprite_index != spr_virusCrouchHold) {
+			sprite_index = spr_virusCrouch;
 		}
 	}
 } else if(block_frames > 0) {
-	sprite_index = spr_germaphobeBlockHold;
+	sprite_index = spr_virusBlock;
 } else if(hit_stun_count > 0) {
-	sprite_index = spr_germaphobeHit;
+	sprite_index = spr_virusHit;
 }
 // player is on the ground
 // player is not hit stun

@@ -79,6 +79,6 @@ if(ready_to_play) {
 		obj_gameManager.player1_device = p1_device;
 		obj_gameManager.player2_device = p2_device;
 		show_debug_message(obj_gameManager.player1_device);
-		room_goto(rm_arena);
+		room_goto(rm_characterSelect);
 	}
 }
