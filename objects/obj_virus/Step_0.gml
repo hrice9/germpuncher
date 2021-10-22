@@ -8,9 +8,9 @@ if(!attacking && block_frames <= 0 && hit_stun_count <= 0) {
 	// update animations based on movement
 	if(!down) {
 		if(sign(velocity_x) == facing) {
-			sprite_index = spr_germaphobeWalkForward;
+			sprite_index = spr_virusWalkForward;
 		} else if(sign(velocity_x) == -facing) {
-			sprite_index = spr_germaphobeWalkBackward;
+			sprite_index = spr_virusWalkBackward;
 		} else {
 			sprite_index = spr_virusIdle;
 		}
