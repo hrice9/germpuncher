@@ -41,8 +41,8 @@ if(keyboard_check_pressed(ord("D"))) {
 for(var i = 0; i < 16; i++ ) {
 	if(gamepad_is_connected(i)) {
 		var token = tokens[0];
-		for(var j = 0; j < 16; j++) {
-			if(tokens[i].device == i) {
+		for(var j = 0; j < array_length(tokens); j++) {
+			if(tokens[j].device == i) {
 				token = tokens[j];
 			}
 		}
@@ -52,9 +52,13 @@ for(var i = 0; i < 16; i++ ) {
 			if(p2_device != i) {
 				if(p1_device == -2) {
 					p1_device = i;
+					token.target_x = 450;
+					token.target_y = room_height/2;
 				}
 			} else {
 				p2_device = -2;
+				token.target_x = room_width/2;
+				token.target_y = tokens[0].start_y;
 			}
 		}
 		
@@ -62,9 +66,13 @@ for(var i = 0; i < 16; i++ ) {
 			if(p1_device != i) {
 				if(p2_device == -2) {
 					p2_device = i;
+					token.target_x = room_width - 450;
+					token.target_y = room_height/2;
 				}
 			} else  {
 				p1_device = -2;
+				token.target_x = room_width/2;
+				token.target_y = tokens[0].start_y;
 			}
 		}
 	}
