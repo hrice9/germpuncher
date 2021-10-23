@@ -40,3 +40,11 @@ add_command_input("D DB B BP", function() {
 	sprite_index = spr_germaphobeSpray;
 	image_index = 0;
 });
+
+add_special_input("S", function() {
+	spray_timer = 15;
+	spray = true;
+	attacking = true;
+	sprite_index = spr_germaphobeSpray;
+	image_index = 0;
+});

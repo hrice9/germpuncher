@@ -4,14 +4,15 @@
 function get_inputs(num){
 	// This is a really hacky solution to getting multiple input devices, but it works and I will not complain
 	
-	left  = 0;
-	right = 0;
-	down  = 0;
-	kick  = 0;
-	jump  = 0;
-	punch = 0;
-	kick  = 0;
-	up    = 0;
+	left    = 0;
+	right   = 0;
+	down    = 0;
+	kick    = 0;
+	jump    = 0;
+	punch   = 0;
+	kick    = 0;
+	up      = 0;
+	special = 0;
 	
 	if(num == -1) {
 		left    = keyboard_check(ord("A"));
@@ -20,6 +21,7 @@ function get_inputs(num){
 		up      = keyboard_check(ord("W"));
 		punch   = keyboard_check_pressed(ord("J"));
 		kick    = keyboard_check_pressed(ord("K"));
+		special = keyboard_check_pressed(ord("L"));
 		jump    = keyboard_check_pressed(ord("W"));
 	}
 
@@ -28,24 +30,26 @@ function get_inputs(num){
 	
 		if(gamepad_is_connected(num)) {
 			// get the values from the gamepad
-			left  = gamepad_button_check(num, gp_padl);
-			right = gamepad_button_check(num, gp_padr);
-			down  = gamepad_button_check(num, gp_padd);
-			up    = gamepad_button_check(num, gp_padu);
-			jump  = gamepad_button_check_pressed(num, gp_padu);
-			punch = gamepad_button_check_pressed(num, gp_face1);
-			kick  = gamepad_button_check_pressed(num, gp_face2);
+			left    = gamepad_button_check(num, gp_padl);
+			right   = gamepad_button_check(num, gp_padr);
+			down    = gamepad_button_check(num, gp_padd);
+			up      = gamepad_button_check(num, gp_padu);
+			jump    = gamepad_button_check_pressed(num, gp_padu);
+			punch   = gamepad_button_check_pressed(num, gp_face1);
+			kick    = gamepad_button_check_pressed(num, gp_face2);
+			special = gamepad_button_check_pressed(num, gp_face3);
 		
 		} else {
 			// Take no inputs because the device is not connected
-			left  = 0;
-			right = 0;
-			down  = 0;
-			kick  = 0;
-			jump  = 0;
-			punch = 0;
-			kick  = 0;
-			up    = 0;
+			left    = 0;
+			right   = 0;
+			down    = 0;
+			kick    = 0;
+			jump    = 0;
+			punch   = 0;
+			kick    = 0;
+			up      = 0;
+			special = 0;
 		}
 	}
 }
@@ -97,6 +101,10 @@ function get_command_inputs(num) {
 		value += "K";
 	}
 	
+	if(special) {
+		value = "S";
+	}
+	
 	prev_horizontal = horizontal;
 	prev_vertical = vertical;
 	
@@ -137,31 +145,31 @@ function get_command_inputs(num) {
 
 
 function get_ui_inputs(num) {
-	left   = 0;
-	right  = 0;
-	up     = 0;
-	down   = 0;
-	select = 0;
-	back   = 0;
+	left    = 0;
+	right   = 0;
+	up      = 0;
+	down    = 0;
+	select  = 0;
+	back    = 0;
 	
 	if(num == -1) {
 		// keyboard
-		left   = keyboard_check_pressed(ord("A"));
-		right  = keyboard_check_pressed(ord("D"));
-		up     = keyboard_check_pressed(ord("W"));
-		down   = keyboard_check_pressed(ord("S"));
-		select = keyboard_check_pressed(ord("J"));
-		back   = keyboard_check_pressed(ord("K"));
+		left    = keyboard_check_pressed(ord("A"));
+		right   = keyboard_check_pressed(ord("D"));
+		up      = keyboard_check_pressed(ord("W"));
+		down    = keyboard_check_pressed(ord("S"));
+		select  = keyboard_check_pressed(ord("J"));
+		back    = keyboard_check_pressed(ord("K"));
 	}
 	
 	else {
 		if(gamepad_is_connected(num)) {
-			left   = gamepad_button_check_pressed(num, gp_padl);
-			right  = gamepad_button_check_pressed(num, gp_padr);
-			up     = gamepad_button_check_pressed(num, gp_padu);
-			down   = gamepad_button_check_pressed(num, gp_padd);
-			select = gamepad_button_check_pressed(num, gp_face1);
-			back   = gamepad_button_check_pressed(num, gp_face2);
+			left    = gamepad_button_check_pressed(num, gp_padl);
+			right   = gamepad_button_check_pressed(num, gp_padr);
+			up      = gamepad_button_check_pressed(num, gp_padu);
+			down    = gamepad_button_check_pressed(num, gp_padd);
+			select  = gamepad_button_check_pressed(num, gp_face1);
+			back    = gamepad_button_check_pressed(num, gp_face2);
 		}
 	}
 }
