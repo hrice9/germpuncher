@@ -4,8 +4,8 @@
 function get_inputs(num){
 	// This is a really hacky solution to getting multiple input devices, but it works and I will not complain
 	
-	left    = 0;
-	right   = 0;
+	left    = keyboard_check(vk_left);
+	right   = keyboard_check(vk_right);
 	down    = 0;
 	kick    = 0;
 	jump    = 0;
@@ -41,8 +41,8 @@ function get_inputs(num){
 		
 		} else {
 			// Take no inputs because the device is not connected
-			left    = 0;
-			right   = 0;
+			left    = keyboard_check(vk_left);
+			right   = keyboard_check(vk_right);
 			down    = 0;
 			kick    = 0;
 			jump    = 0;
