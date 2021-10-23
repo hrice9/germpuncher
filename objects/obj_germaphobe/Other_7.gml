@@ -17,4 +17,8 @@ switch(sprite_index) {
 		
 	case spr_germaphobeSpray:
 		attacking = false;
+	
+	case spr_germaphobeKick:
+		attacking = false;
+		image_index = 0;
 }

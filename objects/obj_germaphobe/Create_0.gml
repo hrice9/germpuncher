@@ -24,6 +24,15 @@ add_neutral_input("P", function() {
 	obj.facing = facing;
 });
 
+add_neutral_input("K", function() {
+	attacking = true;
+	sprite_index = spr_germaphobeKick;
+	image_index = 0;
+	var obj = instance_create_layer(x, y, layer, obj_germaphobeKickHitbox);
+	obj.owner = self;
+	obj.facing = facing;
+});
+
 
 add_command_input("D DB BP", function() {
 	spray_timer = 15;
