@@ -27,6 +27,7 @@ crouch_block = false;
 invincible = false;
 hit_stun_count = 0;
 attacking = false;
+grounded_dash = false;
 
 lag_frames = 0;
 

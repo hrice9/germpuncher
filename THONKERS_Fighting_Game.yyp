@@ -91,6 +91,7 @@
     {"id":{"name":"note_buttons","path":"notes/note_buttons/note_buttons.yy",},"order":3,},
     {"id":{"name":"spr_virusPunchHitBox","path":"sprites/spr_virusPunchHitBox/spr_virusPunchHitBox.yy",},"order":0,},
     {"id":{"name":"obj_fighter","path":"objects/obj_fighter/obj_fighter.yy",},"order":3,},
+    {"id":{"name":"spr_virusDash","path":"sprites/spr_virusDash/spr_virusDash.yy",},"order":12,},
     {"id":{"name":"spr_germaphobePunch","path":"sprites/spr_germaphobePunch/spr_germaphobePunch.yy",},"order":9,},
     {"id":{"name":"rm_arena","path":"rooms/rm_arena/rm_arena.yy",},"order":0,},
   ],

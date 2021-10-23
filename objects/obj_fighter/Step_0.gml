@@ -43,9 +43,11 @@ if(place_meeting(x, y + velocity_y, obj_collider)) {
 		y += sign(velocity_y);
 	}
 	velocity_y = 0;
-	if(!dash) {
-		grounded = true;
-	}
+	grounded = true;
+}
+
+if(grounded_dash && dash) {
+	grounded = true;
 }
 
 if(!dash) {

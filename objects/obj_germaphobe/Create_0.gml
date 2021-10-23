@@ -37,9 +37,11 @@ add_neutral_input("K", function() {
 
 
 add_command_input("F F", function() {
-	
-	dash = true;
-	show_debug_message("dashing");
+	if(!grounded) {
+		dash = true;
+		sprite_index = spr_germaphobeDash;
+		image_index = 0;
+	}
 });
 
 add_special_input("D DB BP", function() {

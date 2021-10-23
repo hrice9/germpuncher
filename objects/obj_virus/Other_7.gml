@@ -15,6 +15,6 @@ switch(sprite_index) {
 		image_index = 0;
 		sprite_index = spr_virusCrouchHold;
 		
-	case spr_germaphobeSpray:
-		attacking = false;
+	case spr_virusDash:
+		dash = false;
 }

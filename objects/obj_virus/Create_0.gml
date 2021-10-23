@@ -15,3 +15,10 @@ add_neutral_input("P", function() {
 	obj.owner = self;
 	obj.facing = facing;
 });
+
+add_command_input("F F", function() {
+	sprite_index = spr_virusDash;
+	image_index = 0;
+	grounded_dash = grounded;
+	dash = true;
+});
