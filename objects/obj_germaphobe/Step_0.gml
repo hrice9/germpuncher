@@ -6,7 +6,10 @@ event_inherited();
 // player is not attacking
 if(!attacking && block_frames <= 0 && hit_stun_count <= 0) {
 	// update animations based on movement
-	if(grounded) {
+	if(dash) {
+		sprite_index = spr_germaphobeDash;
+	}
+	else if(grounded) {
 		if(!down) {
 			if(sign(velocity_x) == facing) {
 				sprite_index = spr_germaphobeWalkForward;

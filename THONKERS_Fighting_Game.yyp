@@ -70,6 +70,7 @@
     {"id":{"name":"spr_virusBlock","path":"sprites/spr_virusBlock/spr_virusBlock.yy",},"order":8,},
     {"id":{"name":"note_draft1","path":"notes/note_draft1/note_draft1.yy",},"order":0,},
     {"id":{"name":"obj_humanDefeated","path":"objects/obj_humanDefeated/obj_humanDefeated.yy",},"order":2,},
+    {"id":{"name":"spr_germaphobeDash","path":"sprites/spr_germaphobeDash/spr_germaphobeDash.yy",},"order":17,},
     {"id":{"name":"obj_playerToken","path":"objects/obj_playerToken/obj_playerToken.yy",},"order":15,},
     {"id":{"name":"spr_virusPunch","path":"sprites/spr_virusPunch/spr_virusPunch.yy",},"order":5,},
     {"id":{"name":"scr_endMatch","path":"scripts/scr_endMatch/scr_endMatch.yy",},"order":6,},

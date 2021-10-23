@@ -25,16 +25,24 @@ add_neutral_input("P", function() {
 });
 
 add_neutral_input("K", function() {
-	attacking = true;
-	sprite_index = spr_germaphobeKick;
-	image_index = 0;
-	var obj = instance_create_layer(x, y, layer, obj_germaphobeKickHitbox);
-	obj.owner = self;
-	obj.facing = facing;
+	if(grounded) {
+		attacking = true;
+		sprite_index = spr_germaphobeKick;
+		image_index = 0;
+		var obj = instance_create_layer(x, y, layer, obj_germaphobeKickHitbox);
+		obj.owner = self;
+		obj.facing = facing;
+	}
 });
 
 
-add_command_input("D DB BP", function() {
+add_command_input("F F", function() {
+	
+	dash = true;
+	show_debug_message("dashing");
+});
+
+add_special_input("D DB BP", function() {
 	spray_timer = 15;
 	spray = true;
 	attacking = true;
@@ -42,7 +50,7 @@ add_command_input("D DB BP", function() {
 	image_index = 0;
 });
 
-add_command_input("D DB B BP", function() {
+add_special_input("D DB B BP", function() {
 	spray_timer = 15;
 	spray = true;
 	attacking = true;

@@ -1,5 +1,5 @@
 /// @description Basic Player Movements
-if(!attacking && hit_stun_count <= 0 && lag_frames <= 0 && block_frames <= 0) {
+if(!attacking && hit_stun_count <= 0 && lag_frames <= 0 && block_frames <= 0 && !dash) {
 	get_command_inputs(dev_num);
 } else if(block_frames > 0) {
 	blocking = true;
@@ -9,6 +9,7 @@ if(!attacking && hit_stun_count <= 0 && lag_frames <= 0 && block_frames <= 0) {
 }
 
 // Set facing - Do not change direction during a dash or during an attack animation
+
 if(!dash) {
 	for(var i = 0; i < instance_number(obj_fighter); i++) {
 		var obj = instance_find(obj_fighter, i)
@@ -21,13 +22,19 @@ if(!dash) {
 	}
 }
 
+
 image_xscale = facing;
 image_speed = global.time_scale;
 
 if(!dash) {
 	gravity_scale = velocity_y > 0 ? 1.2 : 1;
+	velocity_y += global.grav * gravity_scale * global.time_scale;
+} else {
+	gravity_scale = 0;
+	velocity_y = 0;
+	velocity_x = dash_speed * facing;
 }
-velocity_y += global.grav * gravity_scale * global.time_scale;
+//velocity_y += global.grav * gravity_scale * global.time_scale;
 
 
 grounded = false;
@@ -36,10 +43,14 @@ if(place_meeting(x, y + velocity_y, obj_collider)) {
 		y += sign(velocity_y);
 	}
 	velocity_y = 0;
-	grounded = true;
+	if(!dash) {
+		grounded = true;
+	}
 }
 
-y += velocity_y * global.time_scale;
+if(!dash) {
+	y += velocity_y * global.time_scale;
+}
 
 // Left and right movement
 if(grounded && !dash) {
