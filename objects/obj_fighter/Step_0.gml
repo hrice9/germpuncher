@@ -1,6 +1,9 @@
 /// @description Basic Player Movements
-if(!attacking && hit_stun_count <= 0 && lag_frames <= 0) {
+if(!attacking && hit_stun_count <= 0 && lag_frames <= 0 && block_frames <= 0) {
 	get_command_inputs(dev_num);
+} else if(block_frames > 0) {
+	blocking = true;
+	horizontal = 0;
 } else {
 	horizontal = 0;
 }

@@ -23,7 +23,7 @@ if(!attacking && block_frames <= 0 && hit_stun_count <= 0) {
 	} else {
 		sprite_index = spr_virusJump;
 	}
-} else if(block_frames > 0) {
+} else if(block_frames > 0 && sprite_index != spr_virusBlockHold) {
 	sprite_index = spr_virusBlock;
 } else if(hit_stun_count > 0) {
 	sprite_index = spr_virusHit;

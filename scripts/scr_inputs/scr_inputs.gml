@@ -6,7 +6,7 @@ function get_inputs(num){
 	
 	left    = keyboard_check(vk_left);
 	right   = keyboard_check(vk_right);
-	down    = 0;
+	down    = keyboard_check(vk_down);
 	kick    = 0;
 	jump    = 0;
 	punch   = 0;

@@ -24,6 +24,9 @@ if(!attacking && block_frames <= 0 && hit_stun_count <= 0) {
 		sprite_index = spr_germaphobeJump;
 	}
 } else if(block_frames > 0) {
+	if(sprite_index != spr_germaphobeBlockHold) {
+		sprite_index = spr_germaphobeBlock;
+	}
 	sprite_index = spr_germaphobeBlockHold;
 } else if(hit_stun_count > 0) {
 	sprite_index = spr_germaphobeHit;
