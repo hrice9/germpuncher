@@ -16,6 +16,24 @@ add_neutral_input("P", function() {
 	obj.facing = facing;
 });
 
+add_neutral_input("K", function() {
+	attacking = true;
+	sprite_index = spr_virusKick;
+	image_index = 0;
+	var obj = instance_create_layer(x, y, layer, obj_virusKickHitbox);
+	obj.owner = self;
+	obj.facing = facing;
+});
+
+add_command_input("DP", function() {
+	attacking = true;
+	sprite_index = spr_virusDownLight;
+	image_index = 0;
+	var obj = instance_create_layer(x, y, layer, obj_virusLowAttackHitbox);
+	obj.owner = self;
+	obj.facing = facing;
+});
+
 add_command_input("F F", function() {
 	sprite_index = spr_virusDash;
 	image_index = 0;

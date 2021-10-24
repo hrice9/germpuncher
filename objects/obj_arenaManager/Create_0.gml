@@ -24,4 +24,31 @@ alarm[0] = 3 * 60;
 timeout = false;
 
 
-audio_play_sound(snd_groceryStoreBackground1, 0, true);
+
+if(0 == 1) {
+	var layer_id = layer_get_id("Background");
+	var back_id = layer_background_get_id(layer_id);
+	layer_background_change(back_id, spr_groceryStoreBackground);
+	audio_play_sound(snd_groceryStoreBackground1, 0, true);
+} else {
+	var layer_id = layer_get_id("Background");
+	var back_id = layer_background_get_id(layer_id);
+	layer_background_change(back_id, spr_apartment);
+	
+	var num_flys = irandom_range(5, 10);
+	// Create some flies OMEGALUL
+	for(var i = 0; i < num_flys; i ++) {
+		var randx = 427 + irandom_range(-60, 60);
+		var randy = 624 + irandom_range(-60, 60);
+		var fly = instance_create_layer(randx, randy, layer, obj_fly);
+		set_fly_path(fly);
+	}
+	
+	num_flys = irandom_range(7, 9);
+	for(var i = 0; i < num_flys; i++) {
+		var randx = 887 + irandom_range(-50, 50);
+		var randy = 542 + irandom_range(-50, 50);
+		var fly = instance_create_layer(randx, randy, layer, obj_fly);
+		set_fly_path(fly);
+	}
+}

@@ -35,6 +35,17 @@ add_neutral_input("K", function() {
 	}
 });
 
+add_command_input("DK", function() { // DK! Donkey Kong!
+	if(grounded) {
+		attacking = true;
+		sprite_index = spr_germaphobeDownLight;
+		image_index = 0;
+		var obj = instance_create_layer(x, y, layer, obj_germaphobeDownLightHitbox);
+		obj.owner = self;
+		obj.facing = facing;
+	}
+})
+
 
 add_command_input("F F", function() {
 	if(!grounded) {

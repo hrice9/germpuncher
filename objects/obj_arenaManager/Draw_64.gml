@@ -17,7 +17,8 @@ if(instance_exists(p1)) {
 for(var i = 0; i < num_wins_required; i++) {
 	if(i + 1 <= p1_score) {
 		// draw a box of width 25 with 10 px padding
-		draw_rectangle_color(room_width/2 - 55 - (35 * i), 105, room_width/2 - 80 - (35 * i), 130, c_yellow, c_yellow, c_yellow, c_yellow, false);
+		// draw_rectangle_color(room_width/2 - 55 - (35 * i), 105, room_width/2 - 80 - (35 * i), 130, c_yellow, c_yellow, c_yellow, c_yellow, false);
+		draw_sprite(spr_uiToiletPaper, 0, room_width/2 - 55 - (50 * i), 117);
 	} else {
 		//draw_rectangle_color(room_width/2 - 55 - (35 * i), 105, room_width/2 - 55 - (60 * i), 130, c_gray, c_gray, c_gray, c_gray, false);
 		draw_rectangle_color(room_width/2 - 55 - (35 * i), 105, room_width/2 - 80 - (35 * i), 130, c_gray, c_gray, c_gray, c_gray, false);
@@ -30,7 +31,8 @@ if(instance_exists(p2)) {
 for(var i = 0; i < num_wins_required; i++) {
 	if(i + 1 <= p2_score) {
 		// draw a box of width 25 with 10 px padding
-		draw_rectangle_color(room_width/2 + 55 + (35 * i), 105, room_width/2 + 80 + (35 * i), 130, c_yellow, c_yellow, c_yellow, c_yellow, false);
+		//draw_rectangle_color(room_width/2 + 55 + (35 * i), 105, room_width/2 + 80 + (35 * i), 130, c_yellow, c_yellow, c_yellow, c_yellow, false);
+		draw_sprite(spr_uiToiletPaper, 0, room_width/2 + 55 + (50 * i), 117);
 	} else {
 		//draw_rectangle_color(room_width/2 - 55 - (35 * i), 105, room_width/2 - 55 - (60 * i), 130, c_gray, c_gray, c_gray, c_gray, false);
 		draw_rectangle_color(room_width/2 + 55 + (35 * i), 105, room_width/2 + 80 + (35 * i), 130, c_gray, c_gray, c_gray, c_gray, false);

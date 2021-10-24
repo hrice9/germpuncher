@@ -28,4 +28,11 @@ player2_device = -1;
 player1_match_score = 0;
 player2_match_score = 0;
 
+enum arenaType {
+	store,
+	apartment
+}
+
+arena = arenaType.store;
+
 //game_winner = "Me! The Developer! If you are seeing this message, that means something has gone terribly wrong and you should probably hide because the world is likely going to explode any day now!";
