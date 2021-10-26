@@ -30,4 +30,10 @@ switch(sprite_index) {
 		attacking = false;
 		image_index = 0;
 		break;
+		
+	case spr_virusSpecialLand:
+		attacking = false;
+		spec = false;
+		image_index = 0;
+		break;
 }

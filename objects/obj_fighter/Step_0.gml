@@ -27,7 +27,9 @@ image_xscale = facing;
 image_speed = global.time_scale;
 
 if(!dash) {
-	gravity_scale = velocity_y > 0 ? 1.2 : 1;
+	if(!spec) {
+		gravity_scale = velocity_y > 0 ? 1.2 : 1;
+	}
 	velocity_y += global.grav * gravity_scale * global.time_scale;
 } else {
 	gravity_scale = 0;

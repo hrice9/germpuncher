@@ -31,6 +31,8 @@ grounded_dash = false;
 
 lag_frames = 0;
 
+spec = false;
+
 enum fighterAlarms {
 	inputTimeout,
 	attackAlarm,

@@ -30,18 +30,38 @@ if(!attacking && block_frames <= 0 && hit_stun_count <= 0) {
 } else if(hit_stun_count > 0) {
 	sprite_index = spr_virusHit;
 }
+
+if(attacking && grounded && spec) {
+	sprite_index = spr_virusSpecialLand;
+	if(special_hitbox != noone) {
+		instance_destroy(special_hitbox);
+		special_hitbox = noone;
+	}
+	special = false;
+	/*
+	var obj = instance_create_layer(x, y, layer, obj_virusSpecialLandHitbox);
+	obj.owner = self;
+	obj.facing = self;
+	*/
+}
 // player is on the ground
 // player is not hit stun
 // player is not blocking
 
 
-if(spray) {
-	spray_timer -= global.time_scale;
-	if(spray_timer <= 0) {
-		var obj = instance_create_layer(x, y - 300, layer, obj_tempProjectile);
-		obj.owner = self;
-		obj.facing = facing;
-		spray = false;
-		//attacking = false;
+if(slam) {
+	jump_frames -= global.time_scale;
+	if(jump_frames <= 0) {
+		velocity_y = 0;
+		sprite_index = spr_virusSpecial;
+		image_index = 0;
+		spec = true;
+		attacking = true;
+		gravity_scale = 2.5;
+		// create the hitbox
+		special_hitbox = instance_create_layer(x, y, layer, obj_virusSpecialHitbox);
+		special_hitbox.owner = self;
+		special_hitbox.facing = facing;
+		slam = false;
 	}
 }

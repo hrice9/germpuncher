@@ -25,7 +25,6 @@ if(instance_exists(p1)) {
 	100 - height/2);
 	
 }
-// draw the outline
 
 for(var i = 0; i < num_wins_required; i++) {
 	var offset = sprite_get_width(spr_uiHealthBarOutline1) - 835;
