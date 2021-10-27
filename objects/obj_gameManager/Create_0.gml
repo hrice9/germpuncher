@@ -1,10 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+randomize();
+
 // Set global variables
 global.time_scale = 1;
 global.grav = 2;
-global.show_hitboxes = true;
+global.show_hitboxes = false;
 global.ground_height = 0;
 /*
 var half_room_width = room_width/2;

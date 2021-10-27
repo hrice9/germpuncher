@@ -28,6 +28,7 @@ invincible = false;
 hit_stun_count = 0;
 attacking = false;
 grounded_dash = false;
+dash_direction = facing;
 
 lag_frames = 0;
 

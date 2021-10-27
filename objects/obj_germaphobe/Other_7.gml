@@ -30,6 +30,10 @@ switch(sprite_index) {
 	case spr_germaphobeDash:
 		dash = false;
 		break;
+	
+	case spr_germaphobeDashBack:
+		dash = false;
+		break;
 		
 	case spr_germaphobeDownLight:
 		attacking = false;

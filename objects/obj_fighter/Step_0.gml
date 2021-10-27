@@ -17,6 +17,7 @@ if(!dash) {
 			var tmpfacing = sign(obj.x - x);
 			if(tmpfacing != 0) {
 				facing = tmpfacing;
+				dash_direction = 1; // dash in the direction that the player is facing (this is only changed when backdashing)
 			}
 		}
 	}
@@ -78,7 +79,7 @@ if(blocking) {
 }
 
 if(dash) {
-	velocity_x = dash_speed * facing;
+	velocity_x = dash_speed * facing * dash_direction;
 }
 
 

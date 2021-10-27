@@ -48,11 +48,16 @@ add_command_input("DK", function() { // DK! Donkey Kong!
 
 
 add_command_input("F F", function() {
-	if(!grounded) {
-		dash = true;
-		sprite_index = spr_germaphobeDash;
-		image_index = 0;
-	}
+	dash = true;
+	sprite_index = spr_germaphobeDash;
+	image_index = 0;
+});
+
+add_command_input("B B", function() {
+	dash = true;
+	dash_direction = -1;
+	sprite_index = spr_germaphobeDashBack;
+	image_index = 0;
 });
 
 add_special_input("D DB BP", function() {

@@ -182,6 +182,7 @@ function check_vertical() {
 
 function check_horizontal() {
 	// If the input direction equals facing, they are moving forward
+	show_debug_message(sign(horizontal));
 	return sign(horizontal) == facing ? "F" : "B";
 }
 

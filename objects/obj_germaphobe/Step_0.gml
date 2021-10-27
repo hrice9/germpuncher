@@ -7,7 +7,7 @@ event_inherited();
 if(!attacking && block_frames <= 0 && hit_stun_count <= 0) {
 	// update animations based on movement
 	if(dash) {
-		sprite_index = spr_germaphobeDash;
+		//sprite_index = spr_germaphobeDash;
 	}
 	else if(grounded) {
 		if(!down) {
