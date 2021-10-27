@@ -27,7 +27,12 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"damage","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"15","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"minus_frames","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"screen_shake_intensity","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"hit_strength","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"6","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "virus",
     "path": "folders/Objects/Hitboxes/virus.yy",

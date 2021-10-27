@@ -31,6 +31,8 @@
     {"propertyId":{"name":"pause_frames","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"6","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"screen_shake_intensity","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"screen_shake_duration","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"15","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"damage","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"15","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"knockback_x","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"10","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "germaphobe",

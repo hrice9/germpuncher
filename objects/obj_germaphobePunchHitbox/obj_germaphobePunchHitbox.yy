@@ -25,7 +25,12 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"damage","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"6","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"knockback_x","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"minus_frames","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"15","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"hit_strength","path":"objects/obj_hitbox/obj_hitbox.yy",},"objectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"value":"5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "germaphobe",
     "path": "folders/Objects/Hitboxes/germaphobe.yy",
