@@ -3,7 +3,7 @@
 
 draw_set_font(fnt_fightingGameTimer);
 draw_set_halign(fa_center);
-draw_text(room_width/2, 40, "chose your character");
+draw_text(room_width/2, 40, "choose your character");
 
 draw_sprite(spr_uiSelectTokenP1, 0, buttons[selected_p1].x, buttons[selected_p1].y);
 draw_sprite(spr_uiSelectTokenP2, 0, buttons[selected_p2].x, buttons[selected_p2].y);
