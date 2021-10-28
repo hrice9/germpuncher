@@ -25,15 +25,20 @@ timeout = false;
 
 
 
-if(obj_gameManager.arena == arenaType.store) {
+if(false) {
 	var layer_id = layer_get_id("Background");
 	var back_id = layer_background_get_id(layer_id);
 	layer_background_change(back_id, spr_groceryStoreBackground);
-	audio_play_sound(snd_groceryStoreBackground1, 0, true);
+	if(!audio_is_playing(snd_groceryStoreBackground1)) {
+		audio_play_sound(snd_groceryStoreBackground1, 0, true);
+	}
 } else {
 	var layer_id = layer_get_id("Background");
 	var back_id = layer_background_get_id(layer_id);
 	layer_background_change(back_id, spr_apartment);
+	if(!audio_is_playing(snd_apartmentBackground1)) {
+		audio_play_sound(snd_apartmentBackground1, 0, true);
+	}
 	
 	var num_flys = irandom_range(5, 10);
 	// Create some flies OMEGALUL

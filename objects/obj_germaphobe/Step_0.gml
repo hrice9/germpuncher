@@ -46,6 +46,7 @@ if(spray) {
 		obj.owner = self;
 		obj.facing = facing;
 		spray = false;
+		audio_play_sound(snd_spray, 10, false);
 		//attacking = false;
 	}
 }
